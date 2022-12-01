@@ -23,7 +23,40 @@
     color: #00000099;
 }
 .header__link:hover {
-    color: red;
+    color: hsl(5, 85%, 63%);
+}
+#header__openMenu {
+    border: none;
+    background-color: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    cursor: pointer;
+    display: none;
 }
 
 
+
+@media (max-width: 375px) {
+    #header__openMenu {
+        display: block;
+    }
+
+.header .header__link {
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 90px;
+    width: 80px;
+    bottom: 80px;
+}
+    .header {
+    display: flex;
+}
+    .header__item {
+        display: none;
+    }
+}
+
+
+    /* desktop 1440px */
