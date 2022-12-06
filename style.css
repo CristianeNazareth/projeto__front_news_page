@@ -120,7 +120,14 @@
     .header__item {
         display: none;
     }
-    
+    .content__text {
+        display: flex;
+        flex-direction: column;
+    }
+    .content__button button {
+        width: 22rem;
+        height: 2.8rem;
+    }
 
 }
 
