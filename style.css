@@ -46,28 +46,12 @@
     cursor: pointer;
     display: none;
 }
-
-
-
-
-
-
-
-
-
 .content {
     display: flex;
     flex-direction: column;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    
-
 }
-
-
-
-
-
 .content__item img {
     width: auto;
     height: 25rem;
@@ -121,11 +105,11 @@
 .content__button button:hover {
     background-color: var(--Very-dark-blue);
 }
-
 .aside {
     display: block;
-    width: 209px;
+    width: 274px;
     height: 382px;
+    max-height: 100%;
     max-width:100%;
     margin-left:5px;
     background-color: var(--Very-dark-blue);
@@ -163,13 +147,46 @@
     border: 1px solid var(--Dark-grayish-blue);
     margin: 0 25px 0 12px;
 }
-
-
-
-
-
-
-
+.editorial {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 13px;
+    margin: 25px 0 70px 0px;
+}
+.editorial__item {
+    height: 100px;
+    width: 200px;
+}
+.editorial img {
+    height: 100px;
+    width: 80px;
+}
+.number {
+    color: var(--Grayish-blue);
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.editorial a {
+    color: var(--Very-dark-blue);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+.editorial a:hover {
+    color: red;
+}
+.paragraph {
+    height: 40px;
+    color: var(--Dark-grayish-blue);
+    line-height: 15px;
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
 
 
 
@@ -211,6 +228,10 @@
         justify-content: space-evenly;
         padding-top: 35px;
     }
+    .content {
+        display: flex;
+    }
+
     .content__text {
         display: flex;
         flex-direction: column;
@@ -218,6 +239,7 @@
     }
     .content__item img {
         width: 100%;
+        padding: 0;
     }
     .content__button button {
         width: 22rem;
@@ -226,6 +248,12 @@
 
     .header__openMenu.active + .header__item {
         display: block;
+    }
+
+    .aside {
+        flex-direction: column;
+        width: auto;
+        margin: 5rem 0;
     }
 }
     
