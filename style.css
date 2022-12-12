@@ -48,14 +48,25 @@
 }
 .content {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    /* display: grid; */
+    /* grid-template-columns: 2fr 1fr; */
+}
+.content__item {
+    display: flex;
+    flex: 2;
     flex-direction: column;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    max-width: 1440px;
+
 }
 .content__item img {
-    width: auto;
     height: 25rem;
     padding: 0 .5rem .5rem 0;
+    width: 100%;
+    max-width: 1440px;
 }
 .content__text {
     display: flex;
@@ -64,6 +75,8 @@
     flex-direction: 2;
     width: 583px;
     height: auto;
+    width: 100%;
+    max-width: 1440px;
     /* height: 149px; */
 }
 .content__title--h1 {
@@ -72,13 +85,17 @@
     font-weight: bolder;
     justify-content: space-between;
     width: 230px;
+    width: 100%;
+    max-width: 1440px;
     height: 150px;
     margin: 0 5px 5px 0;
 }
 .content__paragraph--p {
     display: block;
     font-size: var(--font-paragraph);
-    width: 294px;
+    /* width: 294px; */
+    width: 100%;
+    max-width: 1440px;
     /* padding: 2px; */
     font-size: var(--font-paragraph);
     color: #00000099;
@@ -87,6 +104,8 @@
 }
 .content__text--text {
     position: relative;
+    width: 100%;
+    max-width: 1440px;
 }
 .content__button button {
     right: 100px;
@@ -106,12 +125,16 @@
     background-color: var(--Very-dark-blue);
 }
 .aside {
-    display: block;
-    width: 274px;
+    /* display: flex; */
+    flex: 1;
+    /* width: 230px; */
     height: 382px;
-    max-height: 100%;
-    max-width:100%;
-    margin-left:5px;
+    width: 100%;
+    max-width: 1440px;
+
+    flex-wrap: wrap;
+
+    margin-left: 2.2rem;
     background-color: var(--Very-dark-blue);
 }
 .aside h5 {
@@ -149,7 +172,8 @@
 }
 .editorial {
     display: flex;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1440px;
     justify-content: space-between;
     gap: 13px;
     margin: 25px 0 70px 0px;
@@ -191,10 +215,44 @@
 
 
 
-@media (max-width: 375px) {
+/* 
+@media (max-width: 1440px) {
     html {
         font-size: 50%;
     }
+} */
+
+
+/* 
+@media (max-width: 830px) {
+    .content {
+        max-width: 100vw;
+    }
+    .content__item img {
+        max-width: 100%;
+
+    }
+    .aside {
+        max-width: 100%;
+        min-width: 189px;
+    }
+} */
+
+@media (max-width: 6019px) {
+    .aside {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+    
 
     #header__openMenu {
         display: block;
@@ -242,7 +300,8 @@
         padding: 0;
     }
     .content__button button {
-        width: 22rem;
+        width: 21rem;
+        max-width: 96%;
         height: 2.8rem;
     }
 
@@ -264,5 +323,3 @@
     
 
 
-
-    /* desktop 1440px */
