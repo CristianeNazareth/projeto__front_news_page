@@ -215,8 +215,29 @@
     }
 }
 
-@media (max-width: 6019px) {
+@media (max-width: 930px) {
+    .content__paragraph--p {
+        font-size: 1.3rem;
+    }
+    .content__button button {
+        font-size: .8rem;
+    }
+    
+}
+
+
+
+@media (max-width: 861px) {
+    .editorial {
+
+    }
+}
+
+@media (max-width: 822px) {
     .aside {
+        height: auto;
+    }
+    .content__title--h1 {
         height: auto;
     }
 }
