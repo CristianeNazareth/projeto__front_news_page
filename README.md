@@ -7,7 +7,7 @@ Tudo guiado pelo Rocketseat em NLW sport com o professor @ maykbrito.
 
 # www front mentor
 
-![preview](./.github/preview.png)
+![preview](./.github/preview-news.png)
 
 - Trilha Explorer
 
